@@ -17,62 +17,60 @@
     <!-- Header -->
     <Header>
         
-        <div class="web_title">
+        <div class="web_title" role="banner">
             <h1>Bloggy</h1>
             <h2>Daily blogs</h2>
         </div>
 
         <hr>
 
-        <nav class="nav_container">
+        <nav class="nav_container" role="navigation" aria-label="Main Navigation">
 
             <div class="nav_socials">
-                <ul class="nav_list">
+                <ul class="nav_list" aria-label="Social Media Links">
                     <a href="#">
                         <li class="nav_icon">
-                            <i class="ph ph-facebook-logo"></i>
+                            <i class="ph ph-facebook-logo" aria-hidden="true"></i>
                         </li>
                     </a>
                     <a href="#">
                         <li class="nav_icon">
-                            <i class="ph ph-x-logo"></i>
+                            <i class="ph ph-x-logo" aria-hidden="true"></i>
                         </li>
                     </a>
                     <a href="#">
                         <li class="nav_icon">
-                            <i class="ph ph-instagram-logo"></i>
+                            <i class="ph ph-instagram-logo" aria-hidden="true"></i>
                         </li>
                     </a>
                     <a href="#">
                         <li class="nav_icon">
-                            <i class="ph ph-youtube-logo"></i>
+                            <i class="ph ph-youtube-logo" aria-hidden="true"></i>
                         </li>
                     </a>
                 </ul>
             </div>
 
             <div class="nav_menu">
-                <ul class="nav_list">
-                    <li class="nav_item">
-                        <a href="#" class="nav_link active_link">
-                            HOME
+                <ul class="nav_list" role="menu">
+                    <li class="nav_item" role="menuitem">
+                        <a href="#Main" class="nav_link">
+                            MAIN
                         </a>
                     </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            ABOUT
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
+                    <li class="nav_item" role="menuitem">
+                        <a href="#Contacts" class="nav_link">
                             CONTACTS
                         </a>
                     </li>
                 </ul>
             </div>
 
-            <div class="nav_searchBar">
-                <i class="ph ph-magnifying-glass"></i>
+            <div class="search-wrapper" role="search" aria-label="Search" aria-label="Search Input">
+                <input type="search" placeholder="Search" />
+                <button class="search-btn" aria-label="Search Button">
+                    <i class="ph ph-magnifying-glass" aria-hidden="true"></i>
+                </button>
             </div>
 
         </nav>
@@ -82,35 +80,88 @@
     </Header>
 
     <!-- Main   -->
-    <main>
+    <main role="main">
         
-        <!-- Aritcle -->
-        <article>    
-            <!-- Blog Title -->
-            <section class="blog_title">
-                <h2>Lorem Ipsum</h2>
-                <h3>by Sawney</h3>
-                <h5><time datetime="2025-01-13 10:00">Jan 13, 2025, 10:00am EST</time></h5>
-            </section>
+        <Section class="article_container">
+            <!-- Aritcle 1-->
+            <article aria-labelledby="article1-title">    
+                <!-- Blog Title -->
+                <section class="blog_title" id="Main">
+                    <h2>Lorem Ipsum</h2>
+                    <h3>by Sawney</h3>
+                    <h5><time datetime="2025-01-13 10:00" aria-label="Published on January 13, 2025, at 10:00 AM">Jan 13, 2025, 10:00am EST</time></h5>
+                </section>
 
-            <!-- Blog Content -->
-            <section class="blog_content">
-                <img src="assets/blog_picture.jpg" alt="Blog Image">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </section>
+                <!-- Blog Content -->
+                <section class="blog_content">
+                    <img src="assets/blog_picture.jpg" alt="Blog Illustration">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </section>
 
-            <!-- Contact -->
-            <section class="blog_contact">
+                <!-- Contact -->
+                <section class="blog_contact">
 
-            </section>
-        </article>
+                </section>
+            </article>
+
+            <!-- Article 2 -->
+            <article aria-labelledby="article2-title">    
+                <!-- Blog Title -->
+                <section class="blog_title" id="Blog-2">
+                    <h2>Lorem Ipsum 2</h2>
+                    <h3>by Sawney</h3>
+                    <h5><time datetime="2025-01-12 09:00" aria-label="Published on January 12, 2025, at 9:00 AM">Jan 12, 2025, 9:00am EST</time></h5>
+                </section>
+
+                <!-- Blog Content -->
+                <section class="blog_content">
+                    <img src="assets/blog_picture.jpg" alt="Blog Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </section>
+
+                <!-- Contact -->
+                <section class="blog_contact">
+
+                </section>
+            </article>
+
+            <!-- Article 3 -->
+            <article aria-labelledby="article3-title">    
+                <!-- Blog Title -->
+                <section class="blog_title" id="Blog-3">
+                    <h2>Lorem Ipsum 3</h2>
+                    <h3>by Sawney</h3>
+                    <h5><time datetime="2025-01-10 09:26" aria-label="Published on January 10, 2025, at 9:26 AM">Jan 10, 2025, 9:26am EST</time></h5>
+                </section>
+
+                <!-- Blog Content -->
+                <section class="blog_content">
+                    <img src="assets/blog_picture.jpg" alt="Blog Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </section>
+
+                <!-- Contact -->
+                <section class="blog_contact">
+
+                </section>
+            </article>
+
+        </Section>
 
         <!-- Aside -->
-        <aside>
+        <aside role="complementary" aria-labelledby="aside-title">
             <!-- About Me -->
             <section class="aside_about_me">
                 <h2 class="aside_title">About Me</h2>
@@ -123,22 +174,16 @@
             <!-- Read More -->
             <section class="aside_read_more">
                 <h2 class="aside_title">Read More</h2>
-                <a href="#">
+                <a href="#Blog-2">
                     <div class="article_cards">
                         <img src="assets/blog_picture.jpg" alt="Blog Image">
-                        <p class="read_more_text">Lorem ipsum dolor sit amet</p>
+                        <p class="read_more_text">Lorem ipsum 2</p>
                     </div>
                 </a>
-                <a href="#">
+                <a href="#Blog-3">
                     <div class="article_cards">
                         <img src="assets/blog_picture.jpg" alt="Blog Image">
-                        <p class="read_more_text">Lorem ipsum dolor sit amet</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="article_cards">
-                        <img src="assets/blog_picture.jpg" alt="Blog Image">
-                        <p class="read_more_text">Lorem ipsum dolor sit amet</p>
+                        <p class="read_more_text">Lorem ipsum 3</p>
                     </div>
                 </a>
             </section>
@@ -146,12 +191,22 @@
 
     </main>
 
+    <div class="scroll_up_container">
+        <a class="scroll_up" href="#" aria-label="Scroll to Top">Back to top<i class="ph ph-arrow-up" aria-hidden="true"></i></a>
+    </div>
+
     <!-- Footer -->
     <Footer>
 
         <div class="footer_text">
             <h2>Bloggy</h2>
             <h3>&#169; Copyright Sawney. All right reserved</h3>
+        </div>
+
+        <div class="footer_contact" id="Contacts" role="region" aria-labelledby="contact-info">
+            <p>Phone: +82 445 0605</p>
+            <p>Email: <a class="contact_mail" href="mailto:sawdaichi@gmail.com" role="link">sawdaichi@gmail.com</a></p>
+            <p>Address: 1234 Elm Street, City, Country</p>
         </div>
 
         <div class="footer_socials">

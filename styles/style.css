@@ -53,7 +53,7 @@ body {
 /* Navigation Bar Socials */
 
 .nav_socials {
-    margin-right: 28%;
+    margin-right: 33.1%;
     margin-left: 2%;
     width: 10%;
 }
@@ -73,12 +73,12 @@ body {
 /* Navigation Section Menu */
 
 .nav_menu {
-    margin-right: 35%;
-
+    margin-right: 30%;
 }
 
 .nav_link {
     color: grey;
+    transition: 0.2s;
 }
 
 .active_link{
@@ -89,10 +89,60 @@ body {
     color: rgb(0, 0, 0, 90%);
 }
 
+/* Search Bar */
+
+.search-wrapper {
+    width: 1.7rem;
+    height: 1.7rem;
+    display: flex;
+    border-radius: 4rem;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    overflow: hidden;
+    transition: 400ms ease-in-out;
+    position: relative;
+}
+.active {
+    width: 15%;
+    border: 1px solid #888;
+}
+.search-wrapper input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 2px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    width: 1.7rem;
+    height: 1.7rem;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 1;
+    color: black;
+    background-color: #f9f9f9;
+}
+
+.search-btn i {
+    font-size: large;
+}
+
 /* Main */
 
 main {
     display: flex;
+    flex-direction: row;
     gap: 5rem;
 }
 
@@ -103,6 +153,10 @@ main img {
 /* Article */
 
 article {
+    padding-top: 20px;
+}
+
+.article_container {
     width: 70%;
 }
 
@@ -127,6 +181,27 @@ article {
 
 .blog_content img {
     margin-bottom: 10px;
+}
+
+/* Scroll up */
+
+.scroll_up_container {
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.scroll_up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    border: 1px solid grey;
 }
 
 /* Aside */
@@ -179,10 +254,12 @@ aside section {
 .article_cards{
     display: flex;
     flex-direction: row;
-    justify-content: center ;
+    justify-content: left ;
     align-items: center;
     padding: 15px 0;
 }
+
+/* Articles in Read more */
 
 .article_cards img{
     border-radius: 50%;
@@ -217,7 +294,14 @@ footer {
 
 .footer_text h3 {
     font-size: 16px;
+    font-weight: 500;
     color: grey;
+}
+
+.contact_mail {
+    text-decoration: none;
+    color: grey;
+    transition: 0.2s;
 }
 
 .footer_socials ul {
